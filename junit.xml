@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.010" tests="15" failures="8">
+  <testsuite name="Root Suite" timestamp="2025-09-30T08:52:16" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Number validator" timestamp="2025-09-30T08:52:16" tests="0" file="C:\Users\LenaStepanyan\Desktop\atm-with-js\test\tests.spec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="isNumberEven" timestamp="2025-09-30T08:52:16" tests="3" file="C:\Users\LenaStepanyan\Desktop\atm-with-js\test\tests.spec.js" time="0.003" failures="1">
+    <testcase name="Number validator isNumberEven If the number is even, return true" time="0.001" classname="If the number is even, return true">
+    </testcase>
+    <testcase name="Number validator isNumberEven If the number is odd, return true" time="0.000" classname="If the number is odd, return true">
+    </testcase>
+    <testcase name="Number validator isNumberEven If it is not a number type" time="0.000" classname="If it is not a number type">
+      <failure message="Invalid Chai property: toThrow. Did you mean &quot;throw&quot;?" type="Error"><![CDATA[Error: Invalid Chai property: toThrow. Did you mean "throw"?
+    at Object.proxyGetter [as get] (node_modules\chai\lib\chai\utils\proxify.js:75:17)
+    at Context.<anonymous> (test\tests.spec.js:22:49)
+    at process.processImmediate (node:internal/timers:505:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="getEvenNumbersFromArray" timestamp="2025-09-30T08:52:16" tests="2" file="C:\Users\LenaStepanyan\Desktop\atm-with-js\test\tests.spec.js" time="0.003" failures="2">
+    <testcase name="Number validator getEvenNumbersFromArray If the array contains only numbers, return an array of even numbers" time="0.001" classname="If the array contains only numbers, return an array of even numbers">
+      <failure message="expected [ 2, 4 ] to equal [ 2, 4 ]" type="AssertionError"><![CDATA[AssertionError: expected [ 2, 4 ] to equal [ 2, 4 ]
+    at Context.<anonymous> (test\tests.spec.js:30:66)
+    at process.processImmediate (node:internal/timers:505:21)
+
+      + expected - actual
+
+]]></failure>
+    </testcase>
+    <testcase name="Number validator getEvenNumbersFromArray If that is not an array then throw error" time="0.000" classname="If that is not an array then throw error">
+      <failure message="[simple string] is not an array of &quot;Numbers&quot;" type="Error"><![CDATA[Error: [simple string] is not an array of "Numbers"
+    at NumbersValidator.getEvenNumbersFromArray (src\file.js:23:9)
+    at Context.<anonymous> (test\tests.spec.js:38:24)
+    at process.processImmediate (node:internal/timers:505:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="isAllNumbers" timestamp="2025-09-30T08:52:16" tests="3" file="C:\Users\LenaStepanyan\Desktop\atm-with-js\test\tests.spec.js" time="0.000" failures="1">
+    <testcase name="Number validator isAllNumbers If the array contains only numbers, return true" time="0.000" classname="If the array contains only numbers, return true">
+    </testcase>
+    <testcase name="Number validator isAllNumbers If the array contains not only numbers, return false" time="0.000" classname="If the array contains not only numbers, return false">
+    </testcase>
+    <testcase name="Number validator isAllNumbers If it is not an array, throw error" time="0.000" classname="If it is not an array, throw error">
+      <failure message="[simple string] is not an array" type="Error"><![CDATA[Error: [simple string] is not an array
+    at NumbersValidator.isAllNumbers (src\file.js:32:10)
+    at Context.<anonymous> (test\tests.spec.js:58:24)
+    at process.processImmediate (node:internal/timers:505:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="isAllNumbers" timestamp="2025-09-30T08:52:16" tests="1" file="C:\Users\LenaStepanyan\Desktop\atm-with-js\test\tests.spec.js" time="0.001" failures="1">
+    <testcase name="Number validator isAllNumbers arg is a number" time="0.000" classname="arg is a number">
+      <failure message="[simple string] is not a number" type="Error"><![CDATA[Error: [simple string] is not a number
+    at NumbersValidator.isInteger (src\file.js:44:10)
+    at Context.<anonymous> (test\tests.spec.js:67:24)
+    at process.processImmediate (node:internal/timers:505:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="config validation" timestamp="2025-09-30T08:52:16" tests="6" file="C:\Users\LenaStepanyan\Desktop\atm-with-js\test\tests.spec.js" time="0.002" failures="3">
+    <testcase name="config validation should contain test script" time="0.001" classname="should contain test script">
+    </testcase>
+    <testcase name="config validation should contain coverage script" time="0.000" classname="should contain coverage script">
+      <failure message="expected { …(7) } to have property &apos;coverage&apos;" type="AssertionError"><![CDATA[AssertionError: expected { …(7) } to have property 'coverage'
+    at Context.<anonymous> (test\tests.spec.js:89:41)
+    at process.processImmediate (node:internal/timers:505:21)]]></failure>
+    </testcase>
+    <testcase name="config validation should contain lint script" time="0.000" classname="should contain lint script">
+      <failure message="expected { …(7) } to have property &apos;lint&apos;" type="AssertionError"><![CDATA[AssertionError: expected { …(7) } to have property 'lint'
+    at Context.<anonymous> (test\tests.spec.js:94:41)
+    at process.processImmediate (node:internal/timers:505:21)]]></failure>
+    </testcase>
+    <testcase name="config validation should contain .eslintrc.json file" time="0.001" classname="should contain .eslintrc.json file">
+      <failure message="Cannot find module &apos;../.eslintrc.json&apos;
+Require stack:
+- C:\Users\LenaStepanyan\Desktop\atm-with-js\test\tests.spec.js
+- C:\Users\LenaStepanyan\Desktop\atm-with-js\node_modules\mocha\lib\nodejs\esm-utils.js
+- C:\Users\LenaStepanyan\Desktop\atm-with-js\node_modules\mocha\lib\mocha.js
+- C:\Users\LenaStepanyan\Desktop\atm-with-js\node_modules\mocha\lib\cli\one-and-dones.js
+- C:\Users\LenaStepanyan\Desktop\atm-with-js\node_modules\mocha\lib\cli\options.js
+- C:\Users\LenaStepanyan\Desktop\atm-with-js\node_modules\mocha\bin\mocha.js" type="Error"><![CDATA[Error: Cannot find module '../.eslintrc.json'
+Require stack:
+- C:\Users\LenaStepanyan\Desktop\atm-with-js\test\tests.spec.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1405:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1061:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1066:22)
+    at Function._load (node:internal/modules/cjs/loader:1215:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Context.<anonymous> (test\tests.spec.js:98:22)
+    at process.processImmediate (node:internal/timers:505:21)]]></failure>
+    </testcase>
+    <testcase name="config validation .gitignore file should exist" time="0.000" classname=".gitignore file should exist">
+    </testcase>
+    <testcase name="config validation .gitignore file should contain node_modules" time="0.000" classname=".gitignore file should contain node_modules">
+    </testcase>
+  </testsuite>
+</testsuites>

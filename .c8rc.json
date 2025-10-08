@@ -1,0 +1,5 @@
+{
+  "reporter": ["text", "html"],
+  "exclude": ["test/*", "node_modules/*"],
+  "all": true
+}
